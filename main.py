@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return _responses.RedirectResponse("/redoc")
+    return _responses.RedirectResponse("/docs")
 
 @app.get("/events")
 async def all_events():
